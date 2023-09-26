@@ -23,9 +23,18 @@ if kq==-1:
 else:
     print("so can tim là ", kq)"""
 
-# c2 dùng đệ quy 
-def linerSearch(x, k, count):
-    
+# c2 dùng pp lính canh
+def linerSearch(x, k):
+  n=len(x)
+  x.append(k)
+  i=0
+  while x[i]!=k:
+      i+=1
+      
+  if i<n:
+      return i+1
+  else:
+      return -1
    
 
 a=[2,3,5,7,8,24,6,7]
